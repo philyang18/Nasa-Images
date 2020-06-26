@@ -30,8 +30,6 @@ export default class MarsRover extends React.Component {
       const photos = await fetchRover(this.props.location.dateProps.earth_date);
       this.setState({ photos });
     } else {
-      today.setDate(1);
-      today.setMonth(9);
       var year = today.getFullYear(),
         month = today.getMonth() + 1,
         day = today.getDate();
